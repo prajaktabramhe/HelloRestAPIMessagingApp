@@ -5,11 +5,19 @@ public class User {
 	private String FirstName;
 	private String LastName;
 
+	public void setfirstName(String FirstName)
+	{
+		this.FirstName = FirstName;
+	}
 	public String getFirstName() {
 		// TODO Auto-generated method stub
 		return FirstName;
 	}
 
+	public void setlastName(String LastName)
+	{
+		this.LastName = LastName;
+	}
 	public String getLastName() {
 		// TODO Auto-generated method stub
 		return LastName;
