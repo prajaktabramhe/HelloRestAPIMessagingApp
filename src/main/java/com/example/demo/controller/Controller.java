@@ -41,4 +41,10 @@ public class Controller {
 	{
 		return "Hello " + user.getFirstName() + " " + user.getLastName() + "!";
 	}
+	
+	@PutMapping("/put/{FirstName}")
+	public String sayHelloPut(@PathVariable String firstName, @RequestParam(value = "lastNmae") String lastName)
+	{
+		return "Hello " + firstName + " " + lastName + "!";
+	}
 }
