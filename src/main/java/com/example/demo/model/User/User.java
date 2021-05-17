@@ -5,6 +5,12 @@ public class User {
 	private String FirstName;
 	private String LastName;
 
+//	public User(User user)
+//	{
+//		this.FirstName = user.FirstName;
+//		this.LastName = user.LastName;
+//	}
+	
 	public void setfirstName(String FirstName)
 	{
 		this.FirstName = FirstName;

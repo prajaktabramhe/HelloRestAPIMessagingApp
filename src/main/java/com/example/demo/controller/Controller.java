@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.demo.model.User.User;
 
 @RestController
@@ -42,8 +41,8 @@ public class Controller {
 		return "Hello " + user.getFirstName() + " " + user.getLastName() + "!";
 	}
 	
-	@PutMapping("/put/{FirstName}")
-	public String sayHelloPut(@PathVariable String firstName, @RequestParam(value = "lastNmae") String lastName)
+	@PutMapping("/put/{firstName}")
+	public String sayHelloPut(@PathVariable String firstName, @RequestParam(value = "lastName") String lastName)
 	{
 		return "Hello " + firstName + " " + lastName + "!";
 	}
